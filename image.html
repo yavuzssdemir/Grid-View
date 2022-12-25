@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Image Project">
+    <meta name="keywords" content="müzik,kurs,flüt,deniz,denizcan">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid View Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="audio" src="./audio/partita.mp3"></audio>
+    <header id="top" class="row">
+        <div id="photo" class="col-3"> 
+            <img src="./image/logo.jpg" alt="">
+        </div>
+        <div id="social" class="col-9">
+             <div id="icon">
+                <a href="https://www.instagram.com/cannnndeniz/" target="_blank">
+                    <img src="./image/instagram.jpg" alt=""></a>
+             </div>
+             <div id="icon">
+                <a href="https://www.youtube.com/@denizcanflut33" target="_blank">
+                    <img src="./image/youtube.jpg" alt=""></a>
+             </div>
+             <div id="icon">
+                <a href="https://www.tiktok.com/@denizcan4433" target="_blank">
+                    <img src="./image/tiktok.jpg" alt=""></a>
+             </div>
+        </div>
+    </header>
+    <nav id="menu" class="row">
+        <div id="mainMenu" class="col-12">
+            MAIN MENU
+        </div>
+    </nav>
+    <div id="left" class="row">
+       <section id="contents" class="col-8">
+        CONTENTS
+       </section>
+       <aside id="right" class="col-4">
+         <img id="plak" class="plak" src="./image/plak.png" alt="">
+       </aside>
+    </div>
+    <footer id="buttom" class="row">
+        <div id="subMenu" class="col-12">
+                <h4>İLETİŞİM: dcan0033@gmail.com</h4>
+        </div>
+    </footer>
+    
+    <script>
+        var audio = document.getElementById("audio");
+        var img = document.getElementById("plak");
+        
+        function play() {
+          audio.play();
+        }
+        
+        function stop() {
+          audio.pause();
+        }
+        
+        img.addEventListener('click', play);
+        img.addEventListener('mouseover', play);    
+    </script>
+</body>
+</html>
